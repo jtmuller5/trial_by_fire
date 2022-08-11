@@ -34,10 +34,14 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: const Center(child: Text('1')),
+      body: Column(
+        children: [
+          
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen()));
+          //Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen()));
         },
         tooltip: 'Next screen',
         child: const Icon(Icons.arrow_forward_outlined),
