@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trial_by_fire/second_screen.dart';
+import 'package:trial_by_fire/widgets/block_one.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,9 +35,20 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          
+          Block(color: Colors.green),
+          Block(color: Colors.red),
+          Block(color: Colors.green),
+          Block(color: Colors.red),
+          Block(color: Colors.green),
+          Block(color: Colors.red),
+          Block(color: Colors.green),
+          Block(color: Colors.red),
+          Block(color: Colors.green),
+          Block(color: Colors.red),
+          Block(color: Colors.green),
+          Block(color: Colors.red),
         ],
       ),
       floatingActionButton: FloatingActionButton(

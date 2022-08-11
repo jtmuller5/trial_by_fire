@@ -10,9 +10,7 @@ class Block extends StatelessWidget {
     return SizedBox(
       height: 100,
       width: 100,
-      child: ColoredBox(
-        color: color,
-      ),
+      child: ColoredBox(color: color),
     );
   }
 }
