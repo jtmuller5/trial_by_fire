@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trial_by_fire/second_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,14 +30,15 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: const Center(child: Text('1')),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen()));
+        },
         tooltip: 'Next screen',
         child: const Icon(Icons.arrow_forward_outlined),
       ),
