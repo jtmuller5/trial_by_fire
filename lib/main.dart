@@ -35,7 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ListView(
+      body: ListView.builder(
+        itemCount: 4,
+        itemBuilder: (context, index) {
+        return Block(color: Colors.red);
+      },),
+      /*body: ListView(
         children: [
           Block(color: Colors.green),
           Block(color: Colors.red),
@@ -50,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Block(color: Colors.green),
           Block(color: Colors.red),
         ],
-      ),
+      ),*/
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           //Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen()));
