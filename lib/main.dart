@@ -35,11 +35,15 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ListView.builder(
-        itemCount: 4,
+      body: ListView.separated(
+        separatorBuilder: (context, index) {
+          return Divider();
+        },
+        itemCount: 10,
         itemBuilder: (context, index) {
-        return Block(color: Colors.red);
-      },),
+          return Block(color: Colors.red);
+        },
+      ),
       /*body: ListView(
         children: [
           Block(color: Colors.green),
